@@ -26,133 +26,7 @@
       ></canvas>
     </div>
 
-    <script>
-let xhr = new XMLHttpRequest();
-let elements_index;
-let chart_data_index
-xhr.open("GET", "https://zenowo.tistory.com/353");
-xhr.responseType='document';
-xhr.onreadystatechange = () => {
-  if (xhr.readyState === 4) {
-    elements_index = xhr.response
-		elements_index = elements_index.getElementsByClassName("contents_style");
-    chart_data_index = elements_index.item(0).innerText;
-		chart_data_index = chart_data_index.replaceAll("(", "{")
-		chart_data_index = chart_data_index.replaceAll(")", "}")
-		chart_data_index = chart_data_index.replaceAll("'", '"')
-		chart_data_index = JSON.parse(chart_data_index)
-
-		
-      isPositive = function (num) {
-        return num >= 0;
-      };
-   
-      var ctx = document.getElementById("chart-area").getContext("2d");
-      window.myTreeMap = new Chart(ctx, {
-        type: "treemap",
-        data: {
-          datasets: [
-            {
-              tree: chart_data_index,
-              key: "시가총액",
-              groups: ["업종명", "종목명"],
-              fontFamily: "Verdana",
-              fontColor: function () {
-                return Chart.helpers.color("black").alpha(0.9).rgbString();
-              },
-              fontSize: 15,
-              fontWeight: "bold",
-              backgroundColor: function (ctx) {
-                var item = ctx.dataset.data[ctx.dataIndex];
-
-                // console.log(ctx);
-                if (!item) {
-                  return;
-                }
-                var 등락률 = item._data.children[0].등락률;
-                if (등락률 == 0) {
-                  return "hsl(0, 0%, 40%)";
-                  // return Chart.helpers.color("black").alpha(0.3).rgbString();
-                }else if (isPositive(등락률)) {
-                  switch (true) {
-                    case 등락률 < 1:
-                      return "hsl(121, 20%, 62%)";
-                      // return Chart.helpers.color("green").alpha(0.1).rgbString();
-                    case 등락률 < 2:
-                      return "hsl(121, 40%, 62%)";
-                      // return Chart.helpers.color("green").alpha(0.3).rgbString();
-                    case 등락률 < 3:
-                      return "hsl(121, 60%, 62%)";
-                      // return Chart.helpers.color("green").alpha(0.5).rgbString();
-                    case 등락률 < 4:
-                      return "hsl(121, 80%, 62%)";
-                      // return Chart.helpers.color("green").alpha(0.7).rgbString();
-                    default:
-                      return "hsl(121, 100%, 62%)";
-                      // return Chart.helpers.color("green").alpha(1).rgbString();
-                  }
-                } else {
-                  switch (true) {
-                    case 등락률 > -1:
-                      return "hsl(0, 20%, 62%)";
-                      // return Chart.helpers.color("red").alpha(0.1).rgbString();
-                    case 등락률 > -2:
-                    return "hsl(0, 40%, 62%)";
-                      // return Chart.helpers.color("red").alpha(0.3).rgbString();
-                    case 등락률 > -3:
-                    return "hsl(0, 60%, 62%)";
-                      // return Chart.helpers.color("red").alpha(0.5).rgbString();
-                    case 등락률 > -4:
-                    return "hsl(0, 80%, 62%)";
-                      // return Chart.helpers.color("red").alpha(0.7).rgbString();
-                    default:
-                    return "hsl(0, 100%, 62%)";
-                      // return Chart.helpers.color("red").alpha(1).rgbString();
-                  }
-                }
-              },
-              spacing: 0.7,
-              borderWidth: 0.3,
-              borderColor: Chart.helpers.color("black").alpha(1).rgbString(),
-            },
-          ],
-        },
-        options: {
-          maintainAspectRatio: false,
-          title: {
-            display: false,
-            text: "코스피 트리맵",
-          },
-          legend: {
-            display: false,
-          },
-          tooltips: {
-            callbacks: {
-              title: function () {
-                return "전일대비";
-              },
-              label: function (item, data) {
-                var dataset = data.datasets[item.datasetIndex];
-                var dataItem = dataset.data[item.index];
-                var obj = dataItem._data;
-                var label = obj.종목명 || obj.업종명;
-                return label + ": " + obj.children[0].등락률;
-              },
-            },
-          },
-        },
-      });
-
-  }
-};
-
-xhr.send();
-
-
-
-    </script>
-    
-<!--     <script>
+  <script>
       isPositive = function (num) {
         return num >= 0;
       };
@@ -254,7 +128,7 @@ xhr.send();
           },
         },
       });
-    </script> -->
+    </script>
 
     <p></p>
     <p></p>
