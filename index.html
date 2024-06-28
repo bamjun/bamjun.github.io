@@ -1,217 +1,290 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Back-End Developer Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f8ff;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            background-color: #f9fff3;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            border-radius: 10px;
-        }
-        h1, h2, h3 {
-            color: #333;
-            text-align: center;
-        }
-        h1 {
-            margin-bottom: 20px;
-            font-size: 2.5em;
-            color: #4b79a1;
-        }
-        p, ul {
-            margin-bottom: 20px;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        a {
-            color: #4b79a1;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .box, .project {
-            border: 1px solid #ddd;
-            padding: 20px;
-            margin-bottom: 20px;
-            background-color: #f3ffff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Back-End Developer Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f8ff;
+      color: #333;
+    }
 
-        .project {
-            background-color: #ebf8ff;
-        }
-        
-        .skills span {
-            display: inline-block;
-            background-color: #ffeb3b;
-            color: #333;
-            padding: 5px 10px;
-            margin: 5px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        }
-        .project img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        }
-        .project-links a {
-            margin-right: 10px;
-        }
-    </style>
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #f9fff3;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: #333;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 2.5em;
+      color: #4b79a1;
+    }
+
+    p,
+    ul {
+      margin-bottom: 20px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    a {
+      color: #4b79a1;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .box,
+    .project {
+      border: 1px solid #ddd;
+      padding: 20px;
+      margin-bottom: 20px;
+      background-color: #f3ffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .project {
+      background-color: #ebf8ff;
+    }
+
+    .skills span {
+      display: inline-block;
+      background-color: #ffeb3b;
+      color: #333;
+      padding: 0px 5px;
+      margin: 4px 2px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .project img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .project-links a {
+      margin-right: 10px;
+    }
+  </style>
 </head>
+
 <body>
-    <div class="container">
-        <h1>Back-End Developer</h1>
-        <div class="box">
-            <p>📧 <a href="mailto:khy5116@naver.com">khy5116@naver.com</a></p>
-            <p>📞 010-8004-8522</p>
-            <p>📍 <a href="https://github.com/bamjun" target="_blank">GitHub</a></p>
-            <p>노션링크: <a href="https://www.notion.so/Back-End-Developer-2659994fd00d41eab9ec3b4449584d42" target="_blank">노션</a></p>
-        </div>
-
-        <div class="box">
-            <h2>Skills</h2>
-            <div class="skills">
-                <span>autohotkey</span>
-                <span>sql</span>
-                <span>vba</span>
-                <span>python</span>
-                <span>javascript</span>
-                <span>django</span>
-                <span>django rest api</span>
-                <span>docker</span>
-            </div>
-        </div>
-
-        <div class="box">
-            <h2>Experience</h2>
-            <h3>동화면세점</h3>
-            <p>매장관리 고객관리</p>
-            <h3>루이비통코리아</h3>
-            <p>매장관리</p>
-        </div>
-
-        <div class="box">
-            <h2>Projects</h2>
-            
-            <div class="project">
-                <h3>Petodo</h3>
-                <p><a href="https://www.oz-02-main-04.xyz/" target="_blank">Website</a> | <a href="https://api.oz-02-main-04.xyz/swagger/" target="_blank">API Swagger</a></p>
-                <p>펫 키우기를 활용한 todo리스트 서비스 (인원: 8, 개발기간: 2024.05.24. ~ 2024.06.20.)</p>
-                <p>기술스택: `django rest api`, `GitHub`, `django`, `python`, `docker`, `postgresql`</p>
-                <p>내가 기여한 일:</p>
-                <ul>
-                    <li>서버 배포 (AWS EC2)</li>
-                    <li>CICD 구현 (브런치 푸쉬 트리거로 서버로 배포)</li>
-                    <li>펫 API</li>
-                    <li>방명록 API</li>
-                    <li>DB 구조 기획</li>
-                </ul>
-                <div class="project-links">
-                    <a href="https://github.com/OZ-Coding-School/oz_02_main-004-BE" target="_blank">백엔드 깃허브</a>
-                    <a href="https://github.com/OZ-Coding-School/oz_02_main-004-FE" target="_blank">프론트 깃허브</a>
-                    <a href="https://www.notion.so/cc471875c148457496e1435b1701250e" target="_blank">프로젝트 소개서</a>
-                </div>
-                <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8a3de105-c56b-42f5-bf1e-24a149af8068/d81dd104-8cea-4c49-9758-7a0ecb83b689/Untitled.png" alt="Petodo Project">
-            </div>
-            
-            <div class="project">
-                <h3>네디플</h3>
-                <p>MBTI 검사하는 서비스 (인원: 7, 개발기간: 2024.04.11.~2024.04.15.)</p>
-                <p>기술스택: `django rest api`, `GitHub`, `django`, `python`, `docker`</p>
-                <p>내가 기여한 일:</p>
-                <ul>
-                    <li>NCP, object storage, PostgresDB(기본배포)</li>
-                    <li>사용자 - API (이메일 인증 - NCP)</li>
-                    <li>사용자 팔로잉, 팔로워 기능</li>
-                    <li>아카이브 API</li>
-                    <li>미디어 - NCP object storage에 업로드/삭제</li>
-                    <li>크롤링 데이터로 게시글 연결</li>
-                </ul>
-                <div class="project-links">
-                    <a href="https://github.com/OZ-Coding-School/oz_02_collabo-006-BE" target="_blank">백엔드 깃허브</a>
-                    <a href="https://github.com/OZ-Coding-School/oz_02_collabo-006" target="_blank">프론트 깃허브</a>
-                    <a href="https://www.notion.so/f5ae421b6e3d4ecf82173d882bcfd612" target="_blank">프로젝트 소개서</a>
-                </div>
-                <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8a3de105-c56b-42f5-bf1e-24a149af8068/46a11a1d-052e-4c2b-8ded-ddc01762a063/Untitled.png" alt="Nedipl Project">
-            </div>
-            
-            <div class="project">
-                <h3>MBTI 검사하기</h3>
-                <p>MBTI 검사하는 서비스 (인원: 1, 개발기간: 2024.04.11.~2024.04.15.)</p>
-                <p>기술스택: `javascript`, `GitHub`, `django`, `python`, `plotly`, `tailwind`</p>
-                <p>내가 기여한 일:</p>
-               
-
- <ul>
-                    <li>회원가입 로그인 기능</li>
-                    <li>프로필 기능</li>
-                    <li>mbti 검사하기</li>
-                    <li>검사 기록 차트로 보여주기</li>
-                </ul>
-                <div class="project-links">
-                    <a href="https://github.com/bamjun/oz_django_miniproject_op_survey" target="_blank">깃허브</a>
-                </div>
-                <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8a3de105-c56b-42f5-bf1e-24a149af8068/fbb15b51-03fa-4c4f-90a0-5da6792b29d4/mbti-demo.gif" alt="MBTI Project">
-            </div>
-            
-            <div class="project">
-                <h3>TODO Calendar</h3>
-                <p>달력을 활용한 todolist (인원: 1, 개발기간: 2024.04.03. ~ 2024.04.07.)</p>
-                <p>기술스택: `javascript`, `GitHub`, `django`, `python`, `tailwind`, `toast API`</p>
-                <p>내가 기여한 일:</p>
-                <ul>
-                    <li>회원가입 로그인 기능</li>
-                    <li>프로필 기능</li>
-                    <li>toast API를 활용한 달력 구현</li>
-                    <li>todo list 구현</li>
-                </ul>
-                <div class="project-links">
-                    <a href="https://github.com/bamjun/django-calendar-todo" target="_blank">깃허브</a>
-                </div>
-                <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8a3de105-c56b-42f5-bf1e-24a149af8068/a91fce51-e078-451d-a9d6-381da2802bd4/markdown-calendar.gif" alt="TODO Calendar Project">
-            </div>
-            
-            <div class="project">
-                <h3>책 랭킹 차트</h3>
-                <p>교보문고에서 일일 북랭킹 크롤링 후 시각화 (인원: 1, 개발기간: 2024.02.07. ~ 2024.02.16.)</p>
-                <p>기술스택: `javascript`, `GitHub`, `flask`, `python`, `plotly`, `tailwind`, `chartjs`, `aws lightsail`, `selenium`</p>
-                <p>내가 기여한 일:</p>
-                <ul>
-                    <li>일일 데이터 크롤링 후 저장</li>
-                    <li>데이터 차트로 보여주기</li>
-                    <li>데이터 리스트 형식으로 보여주기</li>
-                    <li>이전 데이터 조회</li>
-                </ul>
-                <div class="project-links">
-                    <a href="https://github.com/bamjun/ozcodingschool_be_02_homework/tree/main/9___webCrawlingProject" target="_blank">깃허브</a>
-                </div>
-                <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8a3de105-c56b-42f5-bf1e-24a149af8068/d5d7460f-de78-48e4-94fc-ebf8ae67fc66/Untitled.png" alt="Book Ranking Chart Project">
-            </div>
-        </div>
-
-        <div class="box">
-            <h2>Education</h2>
-            <p><a href="https://www.notion.so/7c7ff0f12b58487ebb0eea0c89c206ce" target="_blank">오즈코딩스쿨 - 벡엔드 과정 2기</a></p>
-            <p>2024.01 - 2024.06</p>
-        </div>
+  <div class="container">
+    <h1>Back-End Developer</h1>
+    <div class="box">
+      <p>📧 <a href="mailto:khy5116@naver.com">khy5116@naver.com</a></p>
+      <p>📞 010-8004-8522</p>
+      <p>📍 <a href="https://github.com/bamjun" target="_blank">GitHub</a></p>
+      <p>노션링크: <a href="https://www.notion.so/Back-End-Developer-2659994fd00d41eab9ec3b4449584d42"
+          target="_blank">노션</a></p>
     </div>
+
+    <div class="box">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span>autohotkey</span>
+        <span>sql</span>
+        <span>vba</span>
+        <span>python</span>
+        <span>javascript</span>
+        <span>django</span>
+        <span>django rest api</span>
+        <span>docker</span>
+        <span>aws</span>
+        <span>nginx</span>
+        <span>github actions</span>
+        <span>jenkins</span>
+      </div>
+    </div>
+
+    <div class="box">
+      <h2>Experience</h2>
+      <h3>동화면세점</h3>
+      <p>매장관리 고객관리</p>
+      <h3>루이비통코리아</h3>
+      <p>매장관리</p>
+    </div>
+
+    <div class="box">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>Petodo</h3>
+        <p><a href="https://www.oz-02-main-04.xyz/" target="_blank">Website</a> | <a
+            href="https://api.oz-02-main-04.xyz/swagger/" target="_blank">API Swagger</a></p>
+        <p>펫 키우기를 활용한 todo리스트 서비스 (인원: 8, 개발기간: 2024.05.24. ~ 2024.06.20.)</p>
+        <div class="skills">
+          <span>python</span>
+          <span>django</span>
+          <span>django-rest-framework</span>
+          <span>mysql</span>
+          <span>docker</span>
+          <span>aws</span>
+          <span>nginx</span>
+          <span>github actions</span>
+        </div>
+        <p>내가 기여한 일:</p>
+        <ul>
+          <li>서버 배포 (AWS EC2)</li>
+          <li>CICD 구현 (브런치 푸쉬 트리거로 서버로 배포)</li>
+          <li>펫 API</li>
+          <li>방명록 API</li>
+          <li>DB 구조 기획</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://github.com/OZ-Coding-School/oz_02_main-004-BE" target="_blank">백엔드 깃허브</a>
+          <a href="https://github.com/OZ-Coding-School/oz_02_main-004-FE" target="_blank">프론트 깃허브</a>
+          <a href="https://www.notion.so/cc471875c148457496e1435b1701250e" target="_blank">프로젝트 소개서</a>
+        </div>
+        <img
+          src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8a3de105-c56b-42f5-bf1e-24a149af8068/d81dd104-8cea-4c49-9758-7a0ecb83b689/Untitled.png"
+          alt="Petodo Project">
+      </div>
+
+      <div class="project">
+        <h3>네디플</h3>
+        <p>MBTI 검사하는 서비스 (인원: 7, 개발기간: 2024.04.11.~2024.04.15.)</p>
+        <div class="skills">
+          <span>python</span>
+          <span>django</span>
+          <span>django-rest-framework</span>
+          <span>mysql</span>
+          <span>docker</span>
+          <span>NCP</span>
+          <span>NCP object storage</span>
+          <span>NCP outbound mailer</span>
+          <span>nginx</span>
+          <span>github actions</span>
+          <span>PostgresDB</span>
+        </div>
+        <p>내가 기여한 일:</p>
+        <ul>
+          <li>NCP, object storage, PostgresDB(기본배포)</li>
+          <li>사용자 - API (이메일 인증 - NCP)</li>
+          <li>사용자 팔로잉, 팔로워 기능</li>
+          <li>아카이브 API</li>
+          <li>미디어 - NCP object storage에 업로드/삭제</li>
+          <li>크롤링 데이터로 게시글 연결</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://github.com/OZ-Coding-School/oz_02_collabo-006-BE" target="_blank">백엔드 깃허브</a>
+          <a href="https://github.com/OZ-Coding-School/oz_02_collabo-006" target="_blank">프론트 깃허브</a>
+          <a href="https://www.notion.so/f5ae421b6e3d4ecf82173d882bcfd612" target="_blank">프로젝트 소개서</a>
+        </div>
+        <img
+          src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8a3de105-c56b-42f5-bf1e-24a149af8068/46a11a1d-052e-4c2b-8ded-ddc01762a063/Untitled.png"
+          alt="Nedipl Project">
+      </div>
+
+      <div class="project">
+        <h3>MBTI 검사하기</h3>
+        <p>MBTI 검사하는 서비스 (인원: 1, 개발기간: 2024.04.11.~2024.04.15.)</p>
+        <div class="skills">
+          <span>javascript</span>
+          <span>GitHub</span>
+          <span>django</span>
+          <span>python</span>
+          <span>plotly</span>
+          <span>tailwind</span>
+          <span>htmx</span>
+          <span>allauth</span>
+        </div>
+        <p>내가 기여한 일:</p>
+        <ul>
+          <li>회원가입 로그인 기능</li>
+          <li>프로필 기능</li>
+          <li>mbti 검사하기</li>
+          <li>검사 기록 차트로 보여주기</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://github.com/bamjun/oz_django_miniproject_op_survey" target="_blank">깃허브</a>
+        </div>
+        <img
+          src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8a3de105-c56b-42f5-bf1e-24a149af8068/fbb15b51-03fa-4c4f-90a0-5da6792b29d4/mbti-demo.gif"
+          alt="MBTI Project">
+      </div>
+
+      <div class="project">
+        <h3>TODO Calendar</h3>
+        <p>달력을 활용한 todolist (인원: 1, 개발기간: 2024.04.03. ~ 2024.04.07.)</p>
+        <p>기술스택: `javascript`, `GitHub`, `django`, `python`, `tailwind`, `toast API`</p>
+        <p>내가 기여한 일:</p>
+        <ul>
+          <li>회원가입 로그인 기능</li>
+          <li>프로필 기능</li>
+          <li>toast API를 활용한 달력 구현</li>
+          <li>todo list 구현</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://github.com/bamjun/django-calendar-todo" target="_blank">깃허브</a>
+        </div>
+        <img
+          src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8a3de105-c56b-42f5-bf1e-24a149af8068/a91fce51-e078-451d-a9d6-381da2802bd4/markdown-calendar.gif"
+          alt="TODO Calendar Project">
+      </div>
+
+      <div class="project">
+        <h3>책 랭킹 차트</h3>
+        <p>교보문고에서 일일 북랭킹 크롤링 후 시각화 (인원: 1, 개발기간: 2024.02.07. ~ 2024.02.16.)</p>
+        <div class="skills">
+          <span>javascript</span>
+          <span>github</span>
+          <span>python</span>
+          <span>selenium</span>
+          <span>flask</span>
+          <span>requests</span>
+          <span>beautifulsoup4</span>
+          <span>chartjs</span>
+          <span>aws lightsail</span>
+        </div>
+        </p>
+        <p>내가 기여한 일:</p>
+        <ul>
+          <li>일일 데이터 크롤링 후 저장</li>
+          <li>데이터 차트로 보여주기</li>
+          <li>데이터 리스트 형식으로 보여주기</li>
+          <li>이전 데이터 조회</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://github.com/bamjun/ozcodingschool_be_02_homework/tree/main/9___webCrawlingProject"
+            target="_blank">깃허브</a>
+        </div>
+        <img
+          src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8a3de105-c56b-42f5-bf1e-24a149af8068/d5d7460f-de78-48e4-94fc-ebf8ae67fc66/Untitled.png"
+          alt="Book Ranking Chart Project">
+      </div>
+    </div>
+
+    <div class="box">
+      <h2>Education</h2>
+      <p><a href="https://www.notion.so/7c7ff0f12b58487ebb0eea0c89c206ce" target="_blank">오즈코딩스쿨 - 벡엔드 과정 2기</a></p>
+      <p>2024.01 - 2024.06</p>
+    </div>
+  </div>
 </body>
+
 </html>
